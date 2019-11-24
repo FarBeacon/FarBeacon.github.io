@@ -44,14 +44,14 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="lang-search2">
-					<a href="./index.html"><img width="60" height="60" src="images/logo-lite.png" alt=""/></a> 
+					<a href="./index"><img width="60" height="60" src="images/logo-lite.png" alt=""/></a> 
                 </div>
 			</div>
 
 			<div class="col-md-8">
 				<div class="lang-search pull-right">
-					<div class="site-lang"><a href="./mobileBeatAndDash.html">EN</a></div>
-					<div class="site-lang2"><a href="./mobileBeatAndDashRU.html">RU</a></div>
+					<div class="site-lang"><a href="./mobileBeatAndDash">EN</a></div>
+					<div class="site-lang2"><a href="./mobileBeatAndDashRU">RU</a></div>
 				</div>
 
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -63,20 +63,20 @@
 				<!-- MENU -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./index.html">Home</a></li>
+						<li><a href="./index">Home</a></li>
 						<li class="dropdown">
-							<a href="./mobileTRIGEO.html">Mobile</a>
+							<a href="./mobileTRIGEO">Mobile</a>
 							<ul class="dropdown-menu">
-								<li><a href="./mobileTRIGEO.html">TRIGEO</a></li>
-								<li><a href="./mobileBeatAndDash.html">Beat & Dash</a></li>
+								<li><a href="./mobileTRIGEO">TRIGEO</a></li>
+								<li><a href="./mobileBeatAndDash">Beat & Dash</a></li>
 
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="./PCVampire.html">PC</a>
+							<a href="./PCVampire">PC</a>
 							<ul class="dropdown-menu">
-								<li><a href="./PCVampire.html">I'm vampire, and you?</a></li>
-                                <li><a href="./MementoMori.html">Memento Mori</a></li>
+								<li><a href="./PCVampire">I'm vampire, and you?</a></li>
+                                <li><a href="./MementoMori">Memento Mori</a></li>
 							</ul>
 						</li> 
 
@@ -171,7 +171,7 @@
         <script>
           $('#thumbs').delegate('img','click', function(){
         	$('#largeImage').attr('src',$(this).attr('src').replace('thumb','large'));
-        	$('#description').html($(this).attr('alt'));
+        	$('#description')($(this).attr('alt'));
         });
         </script>
 

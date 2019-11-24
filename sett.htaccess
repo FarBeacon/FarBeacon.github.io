@@ -1,2 +1,2 @@
-RewriteEngine on
-RewriteRule ^old\.html$ new.html
+RewriteRule ^old\.html$ http://hostname/new.html [r=301]
+

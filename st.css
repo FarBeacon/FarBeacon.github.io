@@ -1,5 +1,25 @@
+﻿/*#tiger{
+position: relative;
+display: inline-block;
+font-family: 'Roboto', sans-serif;
+}
+
+#tiger:hover:after {
+content: attr(data-name);
+font-family: 'Roboto', sans-serif;
+position: absolute;
+left: 30%;
+bottom: 20%;
+background-color: rgba(37,37,37,1);
+color: #fff;
+text-align: center;
+font-size: 14px;
+padding: 3px 0;
+width: 40%;
+}
+*/
 .shadow {
-    box-shadow: 0.5em 0.5em 8px rgba(0,0,0,0.56);
+    box-shadow: 0.5em 0.5em 8px rgba(0,0,0,0.99);
 }
 
 .nizssilka:hover {

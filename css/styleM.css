@@ -660,7 +660,7 @@ sup {
   -o-transform: translate3d(100%, 0, 0);
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  top: 90px; 
+  top: 85px;
   width: 50%;
   -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
   -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
@@ -1712,7 +1712,7 @@ footer p {
     width: 100%;
     height: auto;
     padding: 100px 0 150px;
-    top: 80px;
+    top: 100px;
   }
   #left-side .content {
     position: relative;

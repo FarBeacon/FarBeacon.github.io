@@ -146,7 +146,7 @@ ul, ol, li {
 /* 2. HEADER STYLES */
 
 header {
-	height: 90px;
+	height: 10%;
 	background: rgba(37, 37, 37, 0.6);
 	position: fixed;
 	top: 0;
@@ -1125,11 +1125,10 @@ footer h4 {
 }
 
 .lang-search2 {
-    color: fff;
-    padding-right: 0px;
-	margin-top: 15px;
-	padding-left: 45px;
-	margin-right: -1px;
+	margin-top: 0.55%;
+    position: absolute;
+    width: 67px;
+    height: 67px;
 }
 
 .site-lang {
@@ -4229,7 +4228,7 @@ input[type="range"] {
 .navbar-toggle {
 	padding: 9px 10px;
 	margin-top: 27px;
-	margin-right: 0px;
+	margin-right: 1%;
 	margin-bottom: 8px;
 }
 

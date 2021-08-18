@@ -1727,10 +1727,9 @@ footer p {
   }
 
   .social-icons {
-    left: 0;
-    bottom: 0;
+    left: 10%;
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 70px;
   }
 
   #right-side {
@@ -1802,9 +1801,15 @@ footer p {
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+
+  #left-side .social-icons {
+    left: 10%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
   #left-side {
     padding: 50px 0 100px;
-    top: 4%;
+    top: 5%;
   }
   #left-side .content {
     padding: 0 3%;

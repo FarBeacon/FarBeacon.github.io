@@ -34,6 +34,51 @@ width: 40%;
   background-image: url(../Yes.mp4) no-repeat;
 }
 
+.my-cont{
+    height: 125px;
+}
+
+.my_color_grey {
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 66px;
+    letter-spacing: 0.40em;
+    font-weight: 400;
+    margin-bottom: -14px;
+}
+
+.my_color_grey2 {
+    font-family: 'Roboto', sans-serif;
+        font-style: italic;
+    color: #252525;
+    font-size: 14px;
+}
+
+.my-image {
+    position: fixed;
+    float: right;
+}
+
+.my_page_header{
+    background: linear-gradient(to right, rgba(119,119,119,1), rgba(236,236,236,1), rgba(236,236,236,1), rgba(236,236,236,1));
+}
+
+@media (max-width: 1024px) {
+.my_color_grey {
+    font-size: 29px;
+}
+.my_color_grey2 {
+    font-size: 12px;
+}
+.my_page_header{
+    background: linear-gradient(to right, rgba(180,180,180,1), rgba(210,210,210,1), rgba(236,236,236,1), rgba(236,236,236,1));
+}
+.my-cont{
+    height: 110px;
+}
+}
+
 @media all and (handheld) {
 .fullscreen-bg__video {
   position: absolute;

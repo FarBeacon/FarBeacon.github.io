@@ -677,7 +677,7 @@ sup {
 }
 #right-side .content {
   width: 100%;
-  padding: 4% 10% 0;
+  padding: 4% 10% 8%;
   text-align: left;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -47,6 +47,7 @@ width: 40%;
     display: none;
 }
 
+
 @media (max-width: 768px) {
    .my_hider1{
        display: none;

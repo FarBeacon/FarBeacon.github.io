@@ -29,13 +29,13 @@ $(window).load(function(){
 
             complete: function(){
                 $("#loading").velocity("fadeOut", {
-                    duration: 1000,
+                    duration: 600,
                     easing: [0.7,0,0.3,1],
                 }); 
             }
         })
 
-    },1000);
+    },1);
 
     setTimeout(function(){
         $('.global-overlay').velocity({
@@ -46,13 +46,13 @@ $(window).load(function(){
         },
 
         {
-            duration: 1000,
+            duration: 400,
             easing: [0.7,0,0.3,1],
         })
         
         $(".map-container").addClass("fadeInRight").removeClass('opacity-0');
 
-    },1000);
+    },200);
 
     setTimeout(function(){
         $('#left-side').velocity({
@@ -75,11 +75,11 @@ $(window).load(function(){
         },
 
         {
-            duration: 1000,
+            duration: 400,
             easing: [0.7,0,0.3,1],
         })
-        
-    },1600);
+
+    },600);
 
 })
 

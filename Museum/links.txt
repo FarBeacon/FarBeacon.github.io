@@ -1,4 +1,4 @@
-github.com;vk.com;youtube;unilovel;
+https://github.com/diemonic1;https://vk.com/farbeacon;https://www.youtube.com/channel/UC4dg69xVWZ8gejhkN-Z1zNw;https://farbeacon.github.io/Unilovel;
 0 - github
 1 - vk
 2 - youtube

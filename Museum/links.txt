@@ -1,7 +1,12 @@
-https://github.com/diemonic1;https://vk.com/farbeacon;https://www.youtube.com/channel/UC4dg69xVWZ8gejhkN-Z1zNw;https://farbeacon.github.io/Unilovel;
+https://github.com/diemonic1;https://vk.com/farbeacon;https://www.youtube.com/channel/UC4dg69xVWZ8gejhkN-Z1zNw;https://farbeacon.github.io/Unilovel;https://farbeacon.github.io/LifeBrickGleb;https://farbeacon.github.io/WhenTheStarsCeaseToShine;https://farbeacon.github.io/MementoMori;https://farbeacon.github.io/Vampire;https://farbeacon.github.io/mobileTRIGEO;https://farbeacon.github.io/mobileFlappyDawg;https://farbeacon.github.io/mobileTicTacToe;
 0 - github
 1 - vk
 2 - youtube
 3 - unilovel
-4 - 
-5 -
+4 - LifeBrickGleb
+5 - WhenTheStarsCeaseToShine
+6 - MementoMori
+7 - Vampire
+8 - mobileTRIGEO
+9 - mobileFlappyDawg
+10 - mobileTicTacToe

@@ -38,7 +38,8 @@
 
 
 	<script>
-		if (navigator.language.indexOf("ru") >= 0 || navigator.language.indexOf("RU") >= 0 || navigator.language.indexOf("Ru") >= 0)
+		var lang = navigator.language.toLowerCase();
+		if (lang.indexOf("ru") >= 0)
 		{
 			window.location.href = "./mobileFlappyDawgRU";
 		}

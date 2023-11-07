@@ -7,8 +7,11 @@
 </head>
 <body>
     <script>
-        console.log(navigator.language);
-        if (navigator.language.indexOf("ru") >= 0 || navigator.language.indexOf("RU") >= 0 || navigator.language.indexOf("Ru") >= 0)
+	    var lang = navigator.language.toLowerCase();
+        
+        console.log(lang);
+
+	    if (lang.indexOf("ru") >= 0)
         {
             window.location.href = "./mainRU";
         }

@@ -36,13 +36,20 @@
 </head>
 <body id="nava-radio">
 
+	<script>
+		if (!navigator.language.indexOf("ru") >= 0 && !navigator.language.indexOf("RU") >= 0 && !navigator.language.indexOf("Ru") >= 0)
+		{
+			window.location.href = "./WhenTheStarsCeaseToShine";
+		}
+	</script>
+
 <!-- HEADER -->
 <header>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
 				<div class="lang-search2">
-					<a href="./indexRU"><img width="60" height="60" src="images/logo-lite.png" alt=""/></a>
+					<a href="./mainRU"><img width="60" height="60" src="images/logo-lite.png" alt=""/></a>
                 </div>
 			</div>
 
@@ -61,13 +68,13 @@
 				<!-- MENU -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="./indexRU">Главная</a></li>
+						<li><a href="./mainRU">Главная</a></li>
 						<li class="dropdown">
 							<a href="./mobileTRIGEORU">Мобильные</a>
 							<ul class="dropdown-menu">
 								<li><a href="./mobileTRIGEORU">TRIGEO</a></li>           
                                 <li><a href="./mobileFlappyDawgRU">Flappy Dawg</a></li>
-<li><a href="./mobileTicTacToeRU">Tic Tac Toe</a></li>
+								<li><a href="./mobileTicTacToeRU">Tic Tac Toe</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">

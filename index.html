@@ -11,11 +11,12 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
     <style>
         body {
-            font-size: 200%;
+            font-size: 300%;
             background-color: #252525;
+            font-family: 'Roboto', sans-serif;
         }
         .centerBlock {
-            width: 400px;
+            width: 600px;
             height: 100px;
             
             position: absolute;
@@ -28,20 +29,40 @@
         }
         .b1 {
             padding: 15px;
-            background-color: aqua;
-            border-radius: 25%;
+            background-color: rgb(68, 68, 68);
+            border-radius: 15px;
         }
         .b2 {
             padding: 15px;
         }
         .time {
             padding: 15px;
-            background-color: red;
+            color: #666666;
+            position: absolute;
+            bottom: 25px;
+            border-radius: 15px;
+        }
+
+        .b1:hover {
+            background-color: rgb(94, 94, 94);
+        }
+        A.link1 { 
+            text-decoration: none;
+            color: white; 
+        }
+        A.link1:hover { 
+            color: white; 
+        }
+        A.link2 { 
+            color: #363636; 
+        }
+        A.link2:hover { 
+            color: #929292; 
         }
     </style>
 </head>
 <body>
-    <div class="centerBlock">
+    <div class="centerBlock" id="centerBlock" style="display: none;">
         <div>
             <span id="museum" class="b1"></span> <span id="time" class="time">5</span>
         </div>
@@ -49,38 +70,49 @@
     </div>
 
     <script>
-        var lang = navigator.language.toLowerCase();
+        var DISABLE = true;
 
-        //
-        if (lang.indexOf("ru") >= 0)
-        {
-            window.location.href = "./mainRU";
-        }
-        else
-        {
-            window.location.href = "./main";
-        }
-        //
+        delayMain();
 
-        var timeObj = document.getElementById("time");
+        async function delayMain(){ 
+            var lang = navigator.language.toLowerCase();
 
-        var museumObj = document.getElementById("museum");
-        var siteObj = document.getElementById("site");
+            if (DISABLE || /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+            {
+                if (lang.indexOf("ru") >= 0)
+                {
+                    window.location.href = "./mainRU";
+                }
+                else
+                {
+                    window.location.href = "./main";
+                }
 
-        if (lang.indexOf("ru") >= 0)
-        {
-            museumObj.innerHTML = '<a href="./Museum">перейти в музей</a>';
-            siteObj.innerHTML = '<a href="./mainRU">открыть сайт</a>';
-        }
-        else
-        {
-            museumObj.innerHTML = '<a href="./Museum">go to the museum</a>';
-            siteObj.innerHTML = '<a href="./main">open the site</a>';
-        }
+                await delayer(1000);
+            }
 
-	    //delay();
+            document.getElementById("centerBlock").style.display = 'block';
 
-        async function delay(){  
+            var timeObj = document.getElementById("time");
+
+            var museumObj = document.getElementById("museum");
+            var siteObj = document.getElementById("site");
+
+            if (lang.indexOf("ru") >= 0)
+            {
+                museumObj.innerHTML = '<a href="./Museum" class="link1">перейти в музей</a>';
+                siteObj.innerHTML = '<a href="./mainRU" class="link2">открыть сайт</a>';
+            }
+            else
+            {
+                museumObj.innerHTML = '<a href="./Museum" class="link1">go to the museum</a>';
+                siteObj.innerHTML = '<a href="./main" class="link2">open the site</a>';
+            }
+
+            delay(timeObj, lang);
+        }  
+
+        async function delay(timeObj, lang){  
             await delayer(1000);
             timeObj.innerHTML = "4";
             await delayer(1000);

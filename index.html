@@ -9,15 +9,89 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	<link rel="shortcut icon" href="images/favicon.ico">
-
+    <style>
+        body {
+            font-size: 200%;
+            background-color: #252525;
+        }
+        .centerBlock {
+            width: 400px;
+            height: 100px;
+            
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: auto;
+        }
+        .b1 {
+            padding: 15px;
+            background-color: aqua;
+            border-radius: 25%;
+        }
+        .b2 {
+            padding: 15px;
+        }
+        .time {
+            padding: 15px;
+            background-color: red;
+        }
+    </style>
 </head>
 <body>
-    <div id="time">5</div>
-    <div id="museum"></div>
-    <div id="site"></div>
+    <div class="centerBlock">
+        <div>
+            <span id="museum" class="b1"></span> <span id="time" class="time">5</span>
+        </div>
+        <div id="site" class="b2"></div>
+    </div>
 
     <script>
-	    if (lang.indexOf("ru") >= 0)
+        var lang = navigator.language.toLowerCase();
+
+        //
+        if (lang.indexOf("ru") >= 0)
+        {
+            window.location.href = "./mainRU";
+        }
+        else
+        {
+            window.location.href = "./main";
+        }
+        //
+
+        var timeObj = document.getElementById("time");
+
+        var museumObj = document.getElementById("museum");
+        var siteObj = document.getElementById("site");
+
+        if (lang.indexOf("ru") >= 0)
+        {
+            museumObj.innerHTML = '<a href="./Museum">перейти в музей</a>';
+            siteObj.innerHTML = '<a href="./mainRU">открыть сайт</a>';
+        }
+        else
+        {
+            museumObj.innerHTML = '<a href="./Museum">go to the museum</a>';
+            siteObj.innerHTML = '<a href="./main">open the site</a>';
+        }
+
+	    //delay();
+
+        async function delay(){  
+            await delayer(1000);
+            timeObj.innerHTML = "4";
+            await delayer(1000);
+            timeObj.innerHTML = "3";
+            await delayer(1000);
+            timeObj.innerHTML = "2";
+            await delayer(1000);
+            timeObj.innerHTML = "1";
+            await delayer(1000);
+
+            if (lang.indexOf("ru") >= 0)
             {
                 window.location.href = "./mainRU";
             }
@@ -25,6 +99,16 @@
             {
                 window.location.href = "./main";
             }
+        }  
+
+        function delayer(ms){
+            return new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                resolve();
+                }, ms)
+            })
+        }     
+
     </script>
 </body>
 </html>

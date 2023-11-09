@@ -22,13 +22,85 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 103%;
+			height: 102%;
 		}
 	</style>
 </head>
 
 <meta>
 
-<body>
-	<iframe frameborder="0" src="https://itch.io/embed-upload/9063634?color=000000" width="1860" height="930"><a href="https://diemonic.itch.io/museum">Play</a></iframe>
+<body id="body">
+	<script>
+		/*
+		const container = document.getElementById("body");;
+
+		window.onload = function() {
+			console.log("123");
+		  //container.requestPointerLock();
+		}
+		document.addEventListener("DOMContentLoaded", () => {
+			console.log("fghgfh");
+		  container.requestPointerLock();
+		});
+
+		document.addEventListener('keydown', function(e) {
+            let keyCode = e.keyCode;
+            
+            alert( "Привет 3" );
+        });
+
+		if ("onpointerlockchange" in document) {
+				console.log("t1");
+			document.addEventListener("pointerlockchange", lockChangeAlert, false);
+		} else if ("onmozpointerlockchange" in document) {
+				console.log("T2");
+			document.addEventListener("mozpointerlockchange", lockChangeAlert, false);
+		} else if ("onwebkitpointerlockchange" in document) {
+				console.log("T3");
+			document.addEventListener("webkitpointerlockchange", lockChangeAlert, false);
+		}
+
+		this.input.manager.events.on('pointerlockchange', (pointer) => {
+			alert( "Привет 14425" );
+		});
+
+		function lockChangeAlert() {
+			alert( "Привет 4566" );
+			if (
+				document.pointerLockElement === canvas ||
+				document.mozPointerLockElement === canvas ||
+				document.webkitPointerLockElement === canvas
+			) {
+				console.log("The pointer lock status is now locked");
+				// Do something useful in response
+			} else {
+				console.log("The pointer lock status is now unlocked");
+				// Do something useful in response
+			}
+		}
+
+
+		document.addEventListener('keydown', function(e) {
+            let keyCode = e.keyCode;
+            
+            if (keyCode === 27) {
+                alert( "Привет 3" );
+				//SendToUnity();
+            }
+        });
+
+		function SendToUnity() {
+			SendMessage("Managers", "Locked", "false");
+		}
+
+
+
+			width="1860" height="930"
+		
+			width: 100%;
+			height: 103%;
+		*/
+	</script>
+
+	<iframe frameborder="0" src="https://itch.io/embed-upload/9068356?color=000000"><a href="https://diemonic.itch.io/museum">Play</a></iframe>
 </body>

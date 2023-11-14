@@ -1,4 +1,4 @@
-https://github.com/diemonic1;https://vk.com/farbeacon;https://www.youtube.com/channel/UC4dg69xVWZ8gejhkN-Z1zNw;https://farbeacon.github.io/Unilovel;https://farbeacon.github.io/LifeBrickGleb;https://farbeacon.github.io/WhenTheStarsCeaseToShine;https://farbeacon.github.io/MementoMori;https://farbeacon.github.io/Vampire;https://farbeacon.github.io/mobileTRIGEO;https://farbeacon.github.io/mobileFlappyDawg;https://farbeacon.github.io/mobileTicTacToe;https://farbeacon.github.io/main;
+https://github.com/diemonic1;https://vk.com/farbeacon;https://www.youtube.com/channel/UC4dg69xVWZ8gejhkN-Z1zNw;https://farbeacon.github.io/Unilovel;https://farbeacon.github.io/LifeBrickGleb;https://farbeacon.github.io/WhenTheStarsCeaseToShine;https://farbeacon.github.io/MementoMori;https://farbeacon.github.io/Vampire;https://farbeacon.github.io/mobileTRIGEO;https://farbeacon.github.io/mobileFlappyDawg;https://farbeacon.github.io/mobileTicTacToe;https://farbeacon.github.io/main;https://diemonic.itch.io/;
 0 - github
 1 - vk
 2 - youtube
@@ -11,3 +11,4 @@ https://github.com/diemonic1;https://vk.com/farbeacon;https://www.youtube.com/ch
 9 - mobileFlappyDawg
 10 - mobileTicTacToe
 11 - mainSite
+12 - itchio

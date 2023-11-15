@@ -4226,7 +4226,7 @@ input[type="range"] {
 .navbar-toggle {
 	padding: 9px 10px;
 	margin-top: 27px;
-	margin-right: -5%;
+	/* margin-right: -5%; */
 	margin-bottom: 8px;
 }
 

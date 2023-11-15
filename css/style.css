@@ -35,6 +35,10 @@ Author:
 
 /* 1. GLOBAL STYLES */
 
+.mainImage {
+    margin-top: 0%;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-x: hidden;
@@ -3910,6 +3914,10 @@ h4.custom-head {
 }
 
 @media only screen and (min-width: 280px)  and (max-width: 767px)  {
+
+.mainImage {
+    margin-top: 13%;
+}
 
 .single-artist img {
 	width:100%;

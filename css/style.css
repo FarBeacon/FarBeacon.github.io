@@ -148,7 +148,7 @@ ul, ol, li {
 
 .container {
 	width: 100%;
-	max-width: 1170px;
+	/* max-width: 1170px; */
 }
 
 /* 2. HEADER STYLES */

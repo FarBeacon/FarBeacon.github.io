@@ -19,7 +19,6 @@
 	<link rel="stylesheet" href="js/vendors/swipebox/css/swipebox.min.css">
 	<link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="st.css"/>
-	<script type="text/javascript" src="./language.js"></script>
 
 	<!-- SKIN -->
 	<link rel="stylesheet" title="skin4" href="css/skins/skin4.css"/>
@@ -38,6 +37,20 @@
 <body id="nava-radio">
 
 <script>
+	function EN(){
+		localStorage.setItem(
+			"language", "EN"
+		);
+		location.reload();
+	}
+
+	function RU() {
+		localStorage.setItem(
+			"language", "RU"
+		);
+		location.reload();
+	}
+	
 	if (localStorage.getItem("language")) {
 		if (localStorage.getItem("language") == "EN")
 			window.location.href = "./LifeBrickGleb";

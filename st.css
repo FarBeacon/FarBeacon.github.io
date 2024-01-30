@@ -19,6 +19,11 @@ width: 40%;
 }
 */
 
+button{
+    background: none;
+    border: none;
+}
+
 .my_table_small {
     position: relative;
     width: 100%;

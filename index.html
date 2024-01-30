@@ -75,7 +75,7 @@
 <body>
     <div class="centerBlock" id="centerBlock" style="display: none;">
         <div>
-            <span id="museum" class="b1"></span> <span id="time" class="time">5</span>
+            <span id="museum" class="b1"></span> <span id="time" class="time">9</span>
         </div>
         <div id="site" class="b2"></div>
         <div class="lang-search pull-right">
@@ -146,6 +146,14 @@
         }  
 
         async function delay(timeObj){  
+            await delayer(1000);
+            timeObj.innerHTML = "8";
+            await delayer(1000);
+            timeObj.innerHTML = "7";
+            await delayer(1000);
+            timeObj.innerHTML = "6";
+            await delayer(1000);
+            timeObj.innerHTML = "5";
             await delayer(1000);
             timeObj.innerHTML = "4";
             await delayer(1000);

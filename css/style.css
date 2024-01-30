@@ -148,7 +148,11 @@ ul, ol, li {
 
 .container {
 	width: 100%;
-	/* max-width: 1170px; */
+	max-width: 1170px;
+}
+
+.containerHeader {
+	width: 100%;
 }
 
 /* 2. HEADER STYLES */
@@ -1137,11 +1141,20 @@ footer h4 {
     padding-right: 0px;
 	margin-top: 36px;
 	padding-left: 45px;
-    margin-right: 12%;
+}
+
+.lang-searchHeader {
+    float:right;
+    color: fff;
+    padding-right: 0px;
+	margin-top: 36px;
+	padding-left: 45px;
+	margin-right: 10%;
 }
 
 .lang-search2 {
 	margin-top: 10px;
+    margin-left: 20px;
     position: absolute;
     width: 60px;
     height: 60px;

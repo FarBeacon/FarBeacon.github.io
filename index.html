@@ -79,14 +79,11 @@
 
             if (DISABLE || /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
             {
-                if (lang.indexOf("ru") >= 0)
-                {
-                    window.location.href = "./mainRU";
-                }
-                else
-                {
-                    window.location.href = "./main";
-                }
+                if (localStorage.getItem("language")) {
+					if (localStorage.getItem("language") == "RU")
+						window.location.href = "./mainRU";
+				}
+                window.location.href = "./main";
 
                 await delayer(1000);
             }
@@ -98,11 +95,19 @@
             var museumObj = document.getElementById("museum");
             var siteObj = document.getElementById("site");
 
-            if (lang.indexOf("ru") >= 0)
+            if (localStorage.getItem("language")) 
             {
-                museumObj.innerHTML = '<a href="./Museum" class="link1">перейти в музей</a>';
-                siteObj.innerHTML = '<a href="./mainRU" class="link2">открыть сайт</a>';
-            }
+                if (localStorage.getItem("language") == "RU")
+                {
+                    museumObj.innerHTML = '<a href="./Museum" class="link1">перейти в музей</a>';
+                    siteObj.innerHTML = '<a href="./mainRU" class="link2">открыть сайт</a>';
+                }
+                else
+                {
+                    museumObj.innerHTML = '<a href="./Museum" class="link1">go to the museum</a>';
+                    siteObj.innerHTML = '<a href="./main" class="link2">open the site</a>';
+                }
+			}
             else
             {
                 museumObj.innerHTML = '<a href="./Museum" class="link1">go to the museum</a>';

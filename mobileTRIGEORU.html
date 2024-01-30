@@ -37,11 +37,24 @@
 <body id="nava-radio">
 
 	<script>
-		var lang = navigator.language.toLowerCase();
-		if (!(lang.indexOf("ru") >= 0))
-		{
-			window.location.href = "./mobileTRIGEO";
-		}
+		function EN(){
+				localStorage.setItem(
+					"language", "EN"
+				);
+				window.location.href = "./mobileTRIGEO";
+			}
+
+			function RU() {
+				localStorage.setItem(
+					"language", "RU"
+				);
+				window.location.href = "./mobileTRIGEORU";
+			}
+
+			if (localStorage.getItem("language")) {
+				if (localStorage.getItem("language") == "EN")
+					window.location.href = "./mobileTRIGEO";
+			}
 	</script>
 
 <!-- HEADER -->
@@ -55,7 +68,10 @@
 			</div>
 
 			<div class="col-md-8">
-
+				<div class="lang-search pull-right">
+					<div class="site-lang"><button onclick="EN();">EN</button></div>
+					<div class="site-lang2Mar"><button onclick="RU();">RU</button></div>
+				</div>
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>

@@ -1467,9 +1467,10 @@
 }
 
 .fadeInUp {
+  opacity: 0;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes fadeInUpBig {

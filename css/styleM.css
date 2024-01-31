@@ -1447,13 +1447,13 @@ sup {
 /* ------------------------------------- */
 .social-icons {
   position: absolute;
-  left: 10%;
+  
   bottom: 5%;
-  margin-left: -22px;
+  margin-left: -23%;
   margin-bottom: -22px;
   display: block;
   z-index: 9;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   white-space: nowrap;
   -webkit-transition: all 0.7s cubic-bezier(0.42, 0, 0.58, 1);
@@ -1663,7 +1663,7 @@ footer p {
 /* Large Devices, Wide Screens */
 /* Notebook devices */
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1160px) {
   .overlay {
     left: 0;
     width: 100%;
@@ -1712,7 +1712,7 @@ footer p {
     width: 100%;
     height: auto;
     padding: 100px 0 150px;
-    top: 100px;
+    top: 3vh;
   }
   #left-side .content {
     position: relative;
@@ -1722,12 +1722,12 @@ footer p {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    top: auto;
+    top: 100%;
     text-align: center;
   }
 
   .social-icons {
-    left: 10%;
+    left: 0%;
     margin-left: 0;
     margin-bottom: 70px;
   }
@@ -1739,7 +1739,7 @@ footer p {
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    top: 0;
+    top: -5vh;
     width: 100%;
   }
   #right-side.hide-right {
@@ -1803,7 +1803,7 @@ footer p {
 @media only screen and (max-width: 480px) {
 
   #left-side .social-icons {
-    left: 10%;
+    left: 0%;
     margin-left: 0;
     margin-bottom: 20px;
   }

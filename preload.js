@@ -5,4 +5,4 @@ setTimeout(() => {
         console.log(elements[i]);
         elements[i].style.display = 'block';
     }
-}, 300);
+}, 10);

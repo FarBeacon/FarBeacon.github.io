@@ -1136,11 +1136,11 @@ footer h4 {
 }
 
 .lang-search {
-    float:right;
+    float: right;
     color: fff;
-    padding-right: 0px;
-	margin-top: 36px;
-	padding-left: 45px;
+    margin-right: 0px;
+    margin-top: 36px;
+    padding-left: 45px;
 }
 
 .lang-searchHeader {
@@ -3935,7 +3935,15 @@ h4.custom-head {
 
 }
 
-@media only screen and (min-width: 280px)  and (max-width: 767px)  {
+@media only screen and (min-width: 200px)  and (max-width: 767px)  {
+
+.lang-search {
+	float:right;
+	color: fff;
+	padding-right: 50px;
+	margin-top: 36px;
+	padding-left: 45px;
+}	
 
 .museumLink {
 	display: none !important;
@@ -4260,7 +4268,7 @@ input[type="range"] {
 .navbar-toggle {
 	padding: 9px 10px;
     margin-top: 28px;
-    margin-right: -50%;
+    margin-right: -185px
 }
 
 .navbar-collapse {
@@ -4340,7 +4348,7 @@ input[type="range"] {
 }
 
 
-@media only screen and (min-width: 360px)  and (max-width: 767px)  {
+@media only screen and (min-width: 100px)  and (max-width: 767px)  {
 
 header .container {
     width: 100%;
@@ -4349,7 +4357,7 @@ header .container {
 }
 
 .header-scroll .lang-search {
-    margin-right: 0 !important;
+    margin-right: 0px !important; 
 }
 
 }

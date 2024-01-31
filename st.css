@@ -19,6 +19,14 @@ width: 40%;
 }
 */
 
+.menuB1{
+    opacity: 1;
+}
+
+.menuB1:hover{
+    opacity: 0.5;
+}
+
 button{
     background: none;
     border: none;

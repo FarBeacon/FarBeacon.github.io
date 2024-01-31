@@ -1169,7 +1169,7 @@ footer h4 {
 	padding-right: 14px;
 	margin-right: 15px;
 	cursor: pointer;
-	transition: .4s;
+	transition: .4s !important;
 }
 
 .site-lang2 {

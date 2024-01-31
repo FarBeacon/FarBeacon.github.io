@@ -315,11 +315,11 @@ a:active, a:focus {
 }
 
 button {
-  -webkit-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  -moz-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  -ms-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  -o-transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
-  transition: all 0.2s cubic-bezier(0.42, 0, 0.58, 1);
+  -webkit-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -moz-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -ms-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  -o-transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
   cursor: pointer;
 }
 button:hover, button:active, button:focus {

@@ -73,8 +73,20 @@
 			<div id="preloader">
 				<span></span>
 				<span></span>
+				<span id="loadingtext">loading</span>
 			</div>
 		</div>
+
+		<script>
+			if (localStorage.getItem("language")){
+				if (localStorage.getItem("language") == "RU")
+					document.getElementById("loadingtext").innerHTML = "загрузка";
+				else
+					document.getElementById("loadingtext").innerHTML = "loading";
+			}
+			else
+				document.getElementById("loadingtext").innerHTML = "loading";
+		</script>
 
 		<!-- Overlay and Star effect -->
 		<div class="global-overlay">

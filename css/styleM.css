@@ -1739,7 +1739,7 @@ footer p {
     -o-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    top: -5vh;
+    top: 0vh;
     width: 100%;
   }
   #right-side.hide-right {

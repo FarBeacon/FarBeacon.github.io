@@ -21,10 +21,21 @@ width: 40%;
 
 .menuB1{
     opacity: 1;
+    transition: .7s;
 }
 
 .menuB1:hover{
     opacity: 0.5;
+}
+
+.menuB2{
+    scale: 1.1;
+    padding: 1px;
+    transition: 100ms;
+}
+
+.menuB2:hover{
+    scale: 1.17;
 }
 
 button{

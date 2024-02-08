@@ -82,6 +82,7 @@ b, strong {
 
 a {
 	color: #fff;
+	transition: .4s;
 }
 
 a:hover {

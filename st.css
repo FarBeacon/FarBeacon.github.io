@@ -137,6 +137,14 @@ button{
     font-size: 13px;
 }
 
+@media (max-height: 740px) {
+    .reldatenav {
+        color: #818181;
+        font-size: 13px;
+        display: none;
+    }
+}
+
 .my_color_grey2 {
     font-family: 'Roboto', sans-serif;
         font-style: italic;

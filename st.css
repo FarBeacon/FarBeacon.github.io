@@ -19,6 +19,10 @@ width: 40%;
 }
 */
 
+.img_bottom_margin{
+    margin-bottom: 10px;
+}
+
 .menuB1{
     opacity: 1;
     transition: .7s;
@@ -65,7 +69,9 @@ button{
 }
 
 .my_hider1{
-    display: block;
+    display: block;    
+    position: relative;
+    top: 5vh;
 }
 .my_hider2{
     display: none;
@@ -113,14 +119,31 @@ button{
     max-width: 1160px;
 }
 
+.reldate {
+    position: relative;
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 0.12em;
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 5px 20px 5px;  /*сверху, справа, снизу, слева*/
+    max-width: 1160px;
+}
+
+.reldatenav {
+    color: #818181;
+    font-size: 13px;
+}
+
 .my_color_grey2 {
     font-family: 'Roboto', sans-serif;
         font-style: italic;
     color: #252525;
     font-size: 14px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 5px 15px 5px;
+    margin: auto;
+    padding: 0px 5px 0px 5px;
     font-weight: 400;
     max-width: 1160px;
 }
@@ -141,16 +164,17 @@ button{
     width: 100%;
     margin-top: -25px;
     padding-left: 3%;
+    margin-bottom: -28px;
 }
 
 .my_table {
     position: relative;
-    padding-top: 30px;
+    padding-bottom: 30px;
     width: 50%;
 }
 
 .my_table iframe {
-    padding-top: 30px;
+    padding-bottom: 30px;
     position: absolute;
     top: 0;
     left: 0;
@@ -165,6 +189,7 @@ button{
 @media (max-width: 768px) {
 .my_page_header{
     background: linear-gradient(to right, rgba(119,119,119,1), rgba(236,236,236,1), rgba(236,236,236,1), rgba(236,236,236,1));
+    margin-bottom: 0px;
 }
 
 .my_color_grey {
@@ -175,14 +200,22 @@ button{
     line-height: 30px;
     padding: 20px 2px 0px 5px;  /*сверху, справа, снизу, слева*/
 }
+
+.reldate {
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
 .my_color_grey2 {
     font-size: 15px;
     margin-left: 3%;
     margin-right: 3%;
-    padding: 0px 5px 10px 2px;
 }
 .my_page_header{
     background: linear-gradient(to right, rgba(180,180,180,1), rgba(210,210,210,1), rgba(236,236,236,1), rgba(236,236,236,1));
+    margin-bottom: 0px;
 }
 .my-cont{
     height: 110px;

@@ -33,9 +33,17 @@
             padding: 15px;
             background-color: rgb(68, 68, 68);
             border-radius: 15px;
+            transition: .4s;
+        }
+        .b1:hover {
+            background-color: rgb(94, 94, 94);
+            cursor: pointer;
         }
         .b2 {
             padding: 15px;
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
         .time {
             padding: 15px;
@@ -44,19 +52,20 @@
             bottom: 25px;
             border-radius: 15px;
         }
-
-        .b1:hover {
-            background-color: rgb(94, 94, 94);
+        a {
+            text-decoration: none;
         }
         A.link1 { 
             text-decoration: none;
             color: white; 
+            transition: .4s;
         }
         A.link1:hover { 
             color: white; 
         }
         A.link2 { 
-            color: #363636; 
+            color: #575757; 
+            transition: .4s;
         }
         A.link2:hover { 
             color: #929292; 
@@ -73,14 +82,13 @@
         }
         button:hover {
             color: #b3b3b3;
-            transition: .4s;
         }
     </style>
 </head>
 <body>
     <div class="centerBlock" id="centerBlock" style="display: none;">
-        <div>
-            <span id="museum" class="b1"></span> <span id="time" class="time">9</span>
+        <div> 
+            <a href="./Museum"><span id="museum" class="b1"></span></a> <span id="time" class="time">9</span>
         </div>
         <div id="site" class="b2"></div>
         <div class="lang-search pull-right">
@@ -132,19 +140,19 @@
                 if (localStorage.getItem("language") == "RU")
                 {
                     museumObj.innerHTML = '<a href="./Museum" class="link1">перейти в музей</a>';
-                    siteObj.innerHTML = '<a href="./mainRU" class="link2">открыть сайт</a>';
+                    siteObj.innerHTML = '<a href="./mainRU" class="link2 menuB2">открыть сайт</a>';
                 }
                 else
                 {
                     museumObj.innerHTML = '<a href="./Museum" class="link1">go to the museum</a>';
-                    siteObj.innerHTML = '<a href="./main" class="link2">open the site</a>';
+                    siteObj.innerHTML = '<a href="./main" class="link2 menuB2">open the site</a>';
                 }
 			}
             else
             {
                 localStorage.setItem("language", "EN");
                 museumObj.innerHTML = '<a href="./Museum" class="link1">go to the museum</a>';
-                siteObj.innerHTML = '<a href="./main" class="link2">open the site</a>';
+                siteObj.innerHTML = '<a href="./main" class="link2 menuB2">open the site</a>';
             }
 
             delay(timeObj);

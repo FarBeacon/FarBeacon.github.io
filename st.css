@@ -137,7 +137,7 @@ button{
     font-size: 13px;
 }
 
-@media (max-height: 740px) {
+@media (max-height: 740px) and (max-width: 768px) {
     .reldatenav {
         color: #818181;
         font-size: 13px;

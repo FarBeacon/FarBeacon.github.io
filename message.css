@@ -26,7 +26,11 @@
 
 @media (max-width: 1160px) {
     .Message{
-        right: 30px;
+        margin: auto;
+        left: 0; 
+        right: 0;
+        width: fit-content;
+        height: fit-content;
     }
  }
 
@@ -39,6 +43,7 @@
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 0.04em;
+    cursor: default;
 }
 
 .MessageScale{

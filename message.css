@@ -11,7 +11,7 @@
     z-index: 100;
     bottom: 30px;
     scale: 1.1;
-    right: 30px;
+    right: 60px;
     padding: 5px 15px 5px 15px;
     transition: 100ms;
 
@@ -23,6 +23,12 @@
     animation-timing-function: ease-in-out;
     animation-delay: 2s;
 }
+
+@media (max-width: 1160px) {
+    .Message{
+        right: 30px;
+    }
+ }
 
 .MessageText{
     vertical-align: baseline;

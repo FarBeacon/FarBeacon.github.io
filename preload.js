@@ -1,5 +1,5 @@
 setTimeout(() => {  
-    var elements = document.getElementsByClassName("fadeInUp");
+    let elements = document.getElementsByClassName("fadeInUp");
 
     for (var i = 0; i < elements.length; i++) {
         console.log(elements[i]);

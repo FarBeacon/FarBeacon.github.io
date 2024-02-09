@@ -13,6 +13,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico">
 		<Script src="theme.js"></Script>
+        <link rel="stylesheet" href="message.css"/>
 		
 		<style>
 			body {
@@ -30,6 +31,10 @@
 		</style>
 	</head>
 	<body>
+		<div class="Message">
+			<span class="MessageText" id="MessageText">FBC Museum</span> <span class="MessageReldatenav">2023</span>
+		</div>
+
 		<script>
 			if (!localStorage.getItem("language")) 
             {
@@ -44,7 +49,16 @@
 				}
                 window.location.href = "./main";
             }
+
+			let text = document.getElementById("MessageText");
+			if (localStorage.getItem("language") == "EN")
+				text.innerHTML = "FBC Museum";
+			else
+				text.innerHTML = "музей FBC";
+
 		</script>
+		
 		<iframe id="myFrame" frameborder="0" src="https://itch.io/embed-upload/9140651?color=000000"><a href="https://diemonic.itch.io/museum">Play</a></iframe>
+	 
 	</body>
 </html>

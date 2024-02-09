@@ -1,0 +1,104 @@
+:root{
+    --p1: 200%;
+    --color1: #434343;
+    --color2: #282828;
+}
+
+.Message{
+    position: fixed;
+    background-color: var(--color1);
+    border-radius: 15px;
+    z-index: 100;
+    bottom: 30px;
+    scale: 1.1;
+    right: 30px;
+    padding: 5px 15px 5px 15px;
+    transition: 100ms;
+
+    -webkit-transform: translateY(var(--p1));
+    -ms-transform: translateY(var(--p1));
+        transform: translateY(var(--p1));
+
+    animation: MessageAnimation 6s, MessageColorAnimation 3s infinite;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+
+.MessageText{
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    direction: ltr;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.MessageScale{
+    scale: 1.1;
+}
+
+.MessageScale:hover{
+    scale: 1.17;
+}
+
+.MessageLink{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+}
+
+.MessageLink:hover{
+    color: #c1c1c1;
+}
+
+.MessageReldatenav {
+    color: #959595;
+    font-size: 13px;
+}
+
+@keyframes MessageColorAnimation{
+    0% {
+        background-color: var(--color1);
+    }
+    50%{     
+        background-color: var(--color2);
+    }
+    100% {
+        background-color: var(--color1);
+    }
+}
+
+@keyframes MessageAnimation{
+    0% {
+        -webkit-transform: translateY(var(--p1));
+        -ms-transform: translateY(var(--p1));
+            transform: translateY(var(--p1));
+        opacity: 0;
+        display: block;
+    }
+    15%{
+        background-color: #434343;
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+        opacity: 1;
+    }
+    85%{     
+        background-color: #282828;
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(var(--p1));
+        -ms-transform: translateY(var(--p1));
+            transform: translateY(var(--p1));
+        opacity: 0;
+        display: none;
+    }
+}

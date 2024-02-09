@@ -19,56 +19,6 @@ width: 40%;
 }
 */
 
-:root{
-    --p1: 400%;
-}
-
-.Message{
-    position: fixed;
-    background-color: #555555;
-    border-radius: 15px;
-    z-index: 100;
-    bottom: 30px;
-    right: 30px;
-    padding: 5px 15px 5px 15px;
-
-    -webkit-transform: translateY(var(--p1));
-    -ms-transform: translateY(var(--p1));
-        transform: translateY(var(--p1));
-
-    animation: MessageAnimation 6s infinite;
-    animation-timing-function: ease-in-out;
-    animation-delay: 3s;
-}
-
-@keyframes MessageAnimation{
-    0% {
-        -webkit-transform: translateY(var(--p1));
-        -ms-transform: translateY(var(--p1));
-            transform: translateY(var(--p1));
-    }
-    15%{
-        -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
-    }
-    85%{
-        -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
-    }
-    100% {
-        -webkit-transform: translateY(var(--p1));
-        -ms-transform: translateY(var(--p1));
-            transform: translateY(var(--p1));
-    }
-}
-
-.MessageReldatenav {
-    color: #818181;
-    font-size: 13px;
-}
-
 .img_bottom_margin{
     margin-bottom: 10px;
 }

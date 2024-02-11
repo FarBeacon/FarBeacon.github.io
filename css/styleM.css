@@ -1679,6 +1679,15 @@ footer p {
 /* Large Devices, Wide Screens */
 /* Notebook devices */
 /* Medium Devices, Desktops */
+
+@media (max-width: 1160px) {
+  ::-webkit-scrollbar
+  {
+    width: 0px;
+    height: 5px;
+  }
+}
+
 @media only screen and (max-width: 1160px) {
   .overlay {
     left: 0;

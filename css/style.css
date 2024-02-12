@@ -45,15 +45,9 @@ Author:
 
 body {
 	font-family: 'Roboto', sans-serif;
-	overflow-x: hidden;
-    overflow:  hidden;
 	color: #fff;
 	font-weight: 400;
 	font-size: 14px;
-}
-
-html, body {
-	overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6 {

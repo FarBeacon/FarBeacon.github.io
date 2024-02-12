@@ -69,6 +69,7 @@
 .MessageReldatenav {
     color: #959595;
     font-size: 13px;
+    font-family: 'Roboto', sans-serif;
 }
 
 @keyframes MessageColorAnimation{

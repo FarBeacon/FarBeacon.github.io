@@ -676,7 +676,7 @@ sup {
   -o-transform: translate3d(100%, 0, 0);
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
-  top: 85px;
+  top: 62px;
   width: 50%;
   -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
   -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
